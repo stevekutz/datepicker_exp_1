@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 import { DatePicker , Card } from 'react-rainbow-components';
+import DatePicker_1 from './comp/DatePIcker_1';
 
 class App extends React.Component {
   state = {
@@ -11,23 +11,9 @@ class App extends React.Component {
 
   render(){
     return (
-  
+      
         <Card style = {{width: `50%`}} center>
-            <DatePicker
-                value={this.state.date}
-                label="DatePicker Label"
-                onChange={ value => this.setState({ date: value }) } 
-            />
-            <DatePicker
-                value={this.state.date_1}
-                label="DatePicker Label"
-                onChange={ value => this.setState({ date_1: value }) } 
-            />
-            <DatePicker
-            value={this.state.date}
-            label="DatePicker Label"
-            onChange={ value => this.setState({ date: value }) } 
-            />
+          <DatePicker_1 />
         </Card>
 
     );
